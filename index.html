@@ -359,7 +359,7 @@
 </div>
 </footer>
 <!-- Modal Window -->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop " data-modal>
     <div class="modal">
         <button class="button-modal" type="button" data-modal-close>
             <svg class="modal-icon-close" width="8px" height="8px">
@@ -395,9 +395,21 @@
         </svg>
     </div>
     </div>
-    <div class="modal-field">
+    <div class="modal-field-comment">
         <label for="comment" class="input-text">Comment</label>
         <textarea class="modal-comment" name="comment" id="comment" placeholder="Text input"></textarea>
+    </div>
+    <div class="modal-field">
+<input type="checkbox" name="policy" id="policy" value="true" class="input-check visually-hiden">
+<label for="policy" class="check-text">
+    <span>
+        <svg class="check-icon" width="10" height="8">
+            <use href="./images/all-icon.svg#icon-Vector"></use>
+        </svg> 
+       </span>
+       I accept the terms and conditions of the 
+       <a class="link-modal" href="#">Privacy Policy</a>
+</label>
     </div>
         <button type="submit" class="modal-send">Send</button>
         </form>
